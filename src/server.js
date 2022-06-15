@@ -3,8 +3,8 @@ const express = require('express');
 const app = express();
 const notFoundHandler = require('./error-handlers/404');
 const errorHandler = require('./error-handlers/500');
-const validator = require('./middlerware/validator');
-const logger = require('./middlerware/logger');
+const validator = require('./middleware/validator');
+const logger = require('./middleware/logger');
 require('dotenv').config();
 
 const PORT = process.env.PORT || 3002;
